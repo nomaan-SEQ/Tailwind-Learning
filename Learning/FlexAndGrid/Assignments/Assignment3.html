@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<!-- 
+------------------------ Assignment 3 (Medium): Dashboard Layout -------------------------
+    Build a dashboard with:
+
+    - Fixed sidebar (w-64) on the left
+    - Main content area that grows (flex-1)
+    - Grid of stat cards (3 columns) in the main area
+    - Everything should work on mobile (sidebar becomes top bar or hidden) 
+-->
+<body class="min-h-screen flex flex-col">
+    <header class="bg-gray-300 p-4 flex-none shadow">Header</header>
+    <div class="flex flex-col sm:flex-row flex-1">
+        <aside class="hidden sm:block bg-gray-100 sm:w-64 text-center">Sidebar</aside>
+        <main class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 items-start p-4">
+            <div class="bg-white p-4 rounded shadow-xl w-64 h-32">1</div>
+            <div class="bg-white p-4 rounded shadow-xl w-64 h-32">2</div>
+            <div class="bg-white p-4 rounded shadow-xl w-64 h-32">3</div>
+        </main>
+    </div>
+    <footer class="bg-gray-700 text-white p-4 flex-none shadow">Footer</footer>
+</body>
+</html>

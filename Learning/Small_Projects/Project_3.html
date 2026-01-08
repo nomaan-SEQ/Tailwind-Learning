@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Product Cards</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-50 p-8">
+
+    <div class="max-w-7xl mx-auto">
+
+        <h1 class="text-3xl font-bold text-gray-900 mb-8">E-commerce Product Cards</h1>
+
+        <!-- Product Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+
+            <!-- Product Card 1: Basic -->
+            <div class="bg-white rounded-xl shadow-md overflow-hidden group hover:shadow-xl transition-shadow">
+
+                <!-- Image Container -->
+                <div class="relative overflow-hidden bg-gray-100">
+                    <img src="https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=400&h=400&fit=crop"
+                        alt="Product"
+                        class="w-full h-64 object-cover transform group-hover:scale-110 transition-transform duration-500">
+
+                    <!-- Badges -->
+                    <div class="absolute top-4 left-4 flex flex-col space-y-2">
+                        <span class="bg-red-500 text-white text-xs font-bold px-3 py-1 rounded-full">
+                            -20%
+                        </span>
+                        <span class="bg-blue-500 text-white text-xs font-bold px-3 py-1 rounded-full">
+                            New
+                        </span>
+                    </div>
+
+                    <!-- Wishlist Button -->
+                    <button
+                        class="absolute top-4 right-4 w-10 h-10 bg-white rounded-full shadow-md flex items-center justify-center text-gray-400 hover:text-red-500 transition-colors">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z">
+                            </path>
+                        </svg>
+                    </button>
+
+                    <!-- Quick View (appears on hover) -->
+                    <div
+                        class="absolute inset-x-0 bottom-0 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                        <button
+                            class="w-full bg-white bg-opacity-90 backdrop-blur-sm text-gray-900 py-3 font-semibold hover:bg-opacity-100 transition">
+                            Quick View
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product Info -->
+                <div class="p-6">
+
+                    <!-- Category -->
+                    <div class="text-xs text-gray-500 uppercase tracking-wider mb-2">
+                        Electronics
+                    </div>
+
+                    <!-- Product Name -->
+                    <h3 class="text-lg font-semibold text-gray-900 mb-2 group-hover:text-blue-600 transition-colors">
+                        Wireless Headphones
+                    </h3>
+
+                    <!-- Rating -->
+                    <div class="flex items-center mb-3">
+                        <div class="flex text-yellow-400">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                                </path>
+                            </svg>
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                                </path>
+                            </svg>
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                                </path>
+                            </svg>
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                                </path>
+                            </svg>
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                                </path>
+                            </svg>
+                        </div>
+                        <span class="text-sm text-gray-600 ml-2">(128 reviews)</span>
+                    </div>
+
+                    <!-- Price -->
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="flex items-center space-x-2">
+                            <span class="text-2xl font-bold text-gray-900">$79.99</span>
+                            <span class="text-sm text-gray-500 line-through">$99.99</span>
+                        </div>
+                        <span class="text-sm text-green-600 font-medium">In Stock</span>
+                    </div>
+
+                    <!-- Add to Cart Button -->
+                    <button
+                        class="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-lg font-semibold transition flex items-center justify-center space-x-2">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z">
+                            </path>
+                        </svg>
+                        <span>Add to Cart</span>
+                    </button>
+
+                </div>
+
+            </div>
+
+            <!-- Product Card 2: With Color Options -->
+            <div class="bg-white rounded-xl shadow-md overflow-hidden group hover:shadow-xl transition-shadow">
+
+                <div class="relative overflow-hidden bg-gray-100">
+                    <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400&h=400&fit=crop"
+                        alt="Product"
+                        class="w-full h-64 object-cover transform group-hover:scale-110 transition-transform duration-500">
+
+                    <span
+                        class="absolute top-4 left-4 bg-green-500 text-white text-xs font-bold px-3 py-1 rounded-full">
+                        Best Seller
+                    </span>
+
+                    <button
+                        class="absolute top-4 right-4 w-10 h-10 bg-white rounded-full shadow-md flex items-center justify-center text-gray-400 hover:text-red-500 transition-colors">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z">
+                            </path>
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="p-6">
+                    <div class="text-xs text-gray-500 uppercase tracking-wider mb-2">
+                        Accessories
+                    </div>
+
+                    <h3 class="text-lg font-semibold text-gray-900 mb-2">
+                        Premium Watch
+                    </h3>
+
+                    <div class="flex items-center mb-3">
+                        <div class="flex text-yellow-400">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                                </path>
+                            </svg>
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                                </path>
+                            </svg>
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                                </path>
+                            </svg>
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                                </path>
+                            </svg>
+                            <svg class="w-4 h-4 text-gray-300" fill="currentColor" viewBox="0 0 20 20">
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                                </path>
+                            </svg>
+                        </div>
+                        <span class="text-sm text-gray-600 ml-2">(89 reviews)</span>
+                    </div>
+
+                    <!-- Color Selection -->
+                    <div class="mb-4">
+                        <p class="text-sm text-gray-700 font-medium mb-2">Color:</p>
+                        <div class="flex space-x-2">
+                            <button
+                                class="w-8 h-8 rounded-full bg-black border-2 border-blue-600 focus:outline-none"></button>
+                            <button
+                                class="w-8 h-8 rounded-full bg-gray-400 border-2 border-transparent hover:border-gray-600 focus:outline-none"></button>
+                            <button
+                                class="w-8 h-8 rounded-full bg-blue-500 border-2 border-transparent hover:border-blue-600 focus:outline-none"></button>
+                            <button
+                                class="w-8 h-8 rounded-full bg-rose-400 border-2 border-transparent hover:border-rose-600 focus:outline-none"></button>
+                        </div>
+                    </div>
+
+                    <div class="flex items-baseline space-x-2 mb-4">
+                        <span class="text-2xl font-bold text-gray-900">$299.00</span>
+                    </div>
+
+                    <div class="flex space-x-2">
+                        <button
+                            class="flex-1 bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-lg font-semibold transition">
+                            Buy Now
+                        </button>
+                        <button
+                            class="px-4 py-3 border-2 border-blue-600 text-blue-600 hover:bg-blue-50 rounded-lg transition">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z">
+                                </path>
+                            </svg>
+                        </button>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Product Card 3: Out of Stock -->
+            <div class="bg-white rounded-xl shadow-md overflow-hidden group hover:shadow-xl transition-shadow">
+
+                <div class="relative overflow-hidden bg-gray-100">
+                    <img src="https://images.unsplash.com/photo-1560343090-f0409e92791a?w=400&h=400&fit=crop"
+                        alt="Product"
+                        class="w-full h-64 object-cover transform group-hover:scale-110 transition-transform duration-500 opacity-75">
+
+                    <!-- Out of Stock Overlay -->
+                    <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
+                        <span class="bg-gray-900 text-white text-lg font-bold px-6 py-3 rounded-lg">
+                            Out of Stock
+                        </span>
+                    </div>
+
+                    <button
+                        class="absolute top-4 right-4 w-10 h-10 bg-white rounded-full shadow-md flex items-center justify-center text-gray-400 hover:text-red-500 transition-colors">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z">
+                            </path>
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="p-6">
+                    <div class="text-xs text-gray-500 uppercase tracking-wider mb-2">
+                        Footwear
+                    </div>
+
+                    <h3 class="text-lg font-semibold text-gray-900 mb-2">
+                        Running Shoes
+                    </h3>
+
+                    <div class="flex items-center mb-3">
+                        <div class="flex text-yellow-400">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                                </path>
+                            </svg>
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                                </path>
+                            </svg>
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                                </path>
+                            </svg>
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                                </path>
+                            </svg>
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                                </path>
+                            </svg>
+                        </div>
+                        <span class="text-sm text-gray-600 ml-2">(245 reviews)</span>
+                    </div>
+
+                    <div class="flex items-baseline space-x-2 mb-4">
+                        <span class="text-2xl font-bold text-gray-900">$129.99</span>
+                    </div>
+
+                    <button class="w-full bg-gray-300 text-gray-500 py-3 rounded-lg font-semibold cursor-not-allowed"
+                        disabled>
+                        Currently Unavailable
+                    </button>
+
+                    <button
+                        class="w-full mt-2 border-2 border-blue-600 text-blue-600 hover:bg-blue-50 py-3 rounded-lg font-semibold transition">
+                        Notify When Available
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Detailed Product View -->
+        <h2 class="text-2xl font-bold text-gray-900 mb-6">Detailed Product View</h2>
+
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 p-8">
+
+                <!-- Image Gallery -->
+                <div>
+                    <!-- Main Image -->
+                    <div class="mb-4 rounded-xl overflow-hidden bg-gray-100">
+                        <img id="main-image"
+                            src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=600&h=600&fit=crop"
+                            alt="Product" class="w-full h-96 object-cover">
+                    </div>
+
+                    <!-- Thumbnail Gallery -->
+                    <div class="grid grid-cols-4 gap-4">
+                        <button class="rounded-lg overflow-hidden border-2 border-blue-600 focus:outline-none"
+                            onclick="changeImage(this)">
+                            <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=150&h=150&fit=crop"
+                                alt="Thumb" class="w-full h-24 object-cover">
+                        </button>
+                        <button
+                            class="rounded-lg overflow-hidden border-2 border-transparent hover:border-gray-300 focus:outline-none"
+                            onclick="changeImage(this)">
+                            <img src="https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=150&h=150&fit=crop"
+                                alt="Thumb" class="w-full h-24 object-cover">
+                        </button>
+                        <button
+                            class="rounded-lg overflow-hidden border-2 border-transparent hover:border-gray-300 focus:outline-none"
+                            onclick="changeImage(this)">
+                            <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=150&h=150&fit=crop"
+                                alt="Thumb" class="w-full h-24 object-cover">
+                        </button>
+                        <button
+                            class="rounded-lg overflow-hidden border-2 border-transparent hover:border-gray-300 focus:outline-none"
+                            onclick="changeImage(this)">
+                            <img src="https://images.unsplash.com/photo-1560343090-f0409e92791a?w=150&h=150&fit=crop"
+                                alt="Thumb" class="w-full h-24 object-cover">
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product Details -->
+                <div>
+
+                    <!-- Brand & Title -->
+                    <div class="mb-4">
+                        <p class="text-sm text-blue-600 font-semibold mb-2">Premium Brand</p>
+                        <h1 class="text-3xl font-bold text-gray-900 mb-2">
+                            Wireless Noise-Cancelling Headphones
+                        </h1>
+                        <p class="text-gray-600">
+                            Experience premium sound quality with our latest wireless headphones
+                        </p>
+                    </div>
+
+                    <!-- Rating -->
+                    <div class="flex items-center mb-6">
+                        <div class="flex text-yellow-400 mr-2">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                                </path>
+                            </svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                                </path>
+                            </svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                                </path>
+                            </svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                                </path>
+                            </svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                                </path>
+                            </svg>
+                        </div>
+                        <span class="text-gray-900 font-semibold">4.8</span>
+                        <span class="text-gray-600 ml-2">(432 reviews)</span>
+                    </div>
+
+                    <!-- Price -->
+                    <div class="mb-6 pb-6 border-b border-gray-200">
+                        <div class="flex items-baseline space-x-3">
+                            <span class="text-4xl font-bold text-gray-900">$249.99</span>
+                            <span class="text-xl text-gray-500 line-through">$349.99</span>
+                            <span class="bg-red-100 text-red-800 text-sm font-bold px-3 py-1 rounded-full">
+                                Save 29%
+                            </span>
+                        </div>
+                        <p class="text-green-600 font-medium mt-2 flex items-center">
+                            <svg class="w-5 h-5 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd"
+                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                            In stock - Ships within 24 hours
+                        </p>
+                    </div>
+
+                    <!-- Color Selection -->
+                    <div class="mb-6">
+                        <label class="block text-sm font-semibold text-gray-900 mb-3">
+                            Color: <span class="font-normal text-gray-600">Black</span>
+                        </label>
+                        <div class="flex space-x-3">
+                            <button
+                                class="w-12 h-12 rounded-lg bg-black border-2 border-blue-600 focus:outline-none relative">
+                                <svg class="absolute inset-0 m-auto w-6 h-6 text-white" fill="currentColor"
+                                    viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd"
+                                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                            </button>
+                            <button
+                                class="w-12 h-12 rounded-lg bg-white border-2 border-gray-300 hover:border-gray-400 focus:outline-none"></button>
+                            <button
+                                class="w-12 h-12 rounded-lg bg-blue-500 border-2 border-gray-300 hover:border-gray-400 focus:outline-none"></button>
+                            <button
+                                class="w-12 h-12 rounded-lg bg-red-500 border-2 border-gray-300 hover:border-gray-400 focus:outline-none"></button>
+                        </div>
+                    </div>
+
+                    <!-- Quantity Selector -->
+                    <div class="mb-6">
+                        <label class="block text-sm font-semibold text-gray-900 mb-3">
+                            Quantity
+                        </label>
+                        <div class="flex items-center space-x-4">
+                            <div class="flex items-center border-2 border-gray-300 rounded-lg">
+                                <button class="px-4 py-2 text-gray-600 hover:bg-gray-100 transition">
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M20 12H4"></path>
+                                    </svg>
+                                </button>
+                                <input type="text" value="1" class="w-12 text-center font-semibold focus:outline-none">
+                                <button class="px-4 py-2 text-gray-600 hover:bg-gray-100 transition">
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M12 4v16m8-8H4"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                            <span class="text-sm text-gray-600">Only 12 items left</span>
+                        </div>
+                    </div>
+
+                    <!-- Action Buttons -->
+                    <div class="flex space-x-4 mb-6">
+                        <button
+                            class="flex-1 bg-blue-600 hover:bg-blue-700 text-white py-4 rounded-lg font-semibold transition flex items-center justify-center space-x-2">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z">
+                                </path>
+                            </svg>
+                            <span>Add to Cart</span>
+                        </button>
+                        <button
+                            class="px-6 py-4 border-2 border-gray-300 hover:border-red-500 text-gray-700 hover:text-red-500 rounded-lg transition">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z">
+                                </path>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <button
+                        class="w-full bg-gray-900 hover:bg-gray-800 text-white py-4 rounded-lg font-semibold transition mb-6">
+                        Buy Now
+                    </button>
+
+                    <!-- Features -->
+                    <div class="space-y-3 border-t border-gray-200 pt-6">
+                        <div class="flex items-center text-sm text-gray-700">
+                            <svg class="w-5 h-5 text-green-500 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd"
+                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                            Free shipping on orders over $50
+                        </div>
+                        <div class="flex items-center text-sm text-gray-700">
+                            <svg class="w-5 h-5 text-green-500 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd"
+                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                            30-day money-back guarantee
+                        </div>
+                        <div class="flex items-center text-sm text-gray-700">
+                            <svg class="w-5 h-5 text-green-500 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd"
+                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                            2-year warranty included
+                        </div>
+                        <div class="flex items-center text-sm text-gray-700">
+                            <svg class="w-5 h-5 text-green-500 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd"
+                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                            24/7 customer support
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Product Description Tabs -->
+            <div class="border-t border-gray-200">
+                <div class="flex border-b border-gray-200">
+                    <button class="px-8 py-4 text-sm font-semibold text-blue-600 border-b-2 border-blue-600">
+                        Description
+                    </button>
+                    <button class="px-8 py-4 text-sm font-semibold text-gray-600 hover:text-gray-900">
+                        Specifications
+                    </button>
+                    <button class="px-8 py-4 text-sm font-semibold text-gray-600 hover:text-gray-900">
+                        Reviews (432)
+                    </button>
+                </div>
+
+                <div class="p-8">
+                    <h3 class="text-lg font-semibold text-gray-900 mb-4">Product Description</h3>
+                    <div class="prose prose-gray max-w-none">
+                        <p class="text-gray-700 mb-4">
+                            Experience unparalleled audio quality with our premium wireless noise-cancelling headphones.
+                            Engineered for audiophiles and everyday users alike, these headphones deliver crystal-clear
+                            sound across all frequencies.
+                        </p>
+                        <p class="text-gray-700 mb-4">
+                            With advanced active noise cancellation technology, you can immerse yourself in your music
+                            without any distractions. The 40-hour battery life ensures you can enjoy your favorite
+                            tracks
+                            all day long.
+                        </p>
+                        <h4 class="text-md font-semibold text-gray-900 mb-2">Key Features:</h4>
+                        <ul class="list-disc list-inside text-gray-700 space-y-2 mb-4">
+                            <li>Premium 40mm drivers for exceptional sound quality</li>
+                            <li>Active noise cancellation (ANC) technology</li>
+                            <li>40-hour battery life with quick charge support</li>
+                            <li>Comfortable memory foam ear cushions</li>
+                            <li>Bluetooth 5.0 with multi-device pairing</li>
+                            <li>Built-in microphone for hands-free calls</li>
+                            <li>Foldable design with premium carrying case</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        function changeImage(button) {
+            const mainImage = document.getElementById('main-image');
+            const newSrc = button.querySelector('img').src.replace('w=150&h=150', 'w=600&h=600');
+            mainImage.src = newSrc;
+
+            // Update border styling
+            document.querySelectorAll('[onclick="changeImage(this)"]').forEach(btn => {
+                btn.classList.remove('border-blue-600');
+                btn.classList.add('border-transparent', 'hover:border-gray-300');
+            });
+            button.classList.add('border-blue-600');
+            button.classList.remove('border-transparent', 'hover:border-gray-300');
+        }
+    </script>
+
+</body>
+
+</html>

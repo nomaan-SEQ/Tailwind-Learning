@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="p-4 space-y-4">
+    <button class="transform hover:scale-105 transition bg-blue-500 text-white px-4 py-3 rounded">
+        Scale on hover
+    </button>
+
+    <!-- Translate up -->
+    <div class="transform hover:-translate-y-1 transition bg-green-500 shadow p-4 rounded">
+        Lifts up on hover
+    </div>
+
+    <!-- Rotate -->
+    <button class="transform hover:rotate-6 transition bg-purple-500 text-white p-4 rounded">
+        Rotate me
+    </button>
+
+    <div class="bg-white shadow hover:shadow-xl rounded-lg overflow-hidden transition-shadow duration-300">
+        <img src="https://picsum.photos/id/237/1920/1080" class="w-full h-48 object-cover">
+        <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">Product Name</h3>
+            <p class="text-gray-600 mb-4">Description here</p>
+            <button class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded transition">
+                Buy Now
+            </button>
+        </div>
+    </div>
+
+    <!-- Image zoom effect -->
+    <div class="overflow-hidden rounded-lg">
+        <img src="https://picsum.photos/id/237/1920/1080"
+            class="w-full h-64 object-cover transform hover:scale-110 transition duration-500">
+    </div>
+
+    <!-- Overlay appears on hover -->
+    <div class="relative group">
+        <img src="https://picsum.photos/id/237/1920/1080" class="w-full h-64 object-cover">
+        <div
+            class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-50 transition-opacity duration-300 flex items-center justify-center">
+            <span class="text-white opacity-0 group-hover:opacity-100 transition-opacity">
+                View Details
+            </span>
+        </div>
+    </div>
+
+    <!-- Focus Effect -->
+    <!-- Change border color on focus -->
+    <input type="text" class="border border-gray-300 focus:border-blue-500 focus:outline-none px-4 py-2 rounded"
+        placeholder="Focus me">
+
+    <!-- Add ring on focus -->
+    <input type="text"
+        class="border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent px-4 py-2 rounded"
+        placeholder="Ring appears on focus">
+
+    <!-- Multiple focus effects -->
+    <input type="text"
+        class="border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 focus:outline-none px-4 py-2 rounded transition"
+        placeholder="Multiple effects">
+
+    <!-- Focus ring for keyboard navigation -->
+    <button class="bg-blue-500 hover:bg-blue-600 focus:ring-4 focus:ring-blue-300 text-white px-6 py-3 rounded">
+        Keyboard accessible
+    </button>
+
+    <!-- Focus with outline offset -->
+    <button
+        class="bg-green-500 hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-400 focus:ring-offset-2 text-white px-6 py-3 rounded">
+        Ring with offset
+    </button>
+
+    <div class="border-2 border-gray-300 focus-within:border-blue-500 p-4 rounded">
+        <label class="block mb-2">Name</label>
+        <input type="text" class="w-full border border-gray-300 px-3 py-2 rounded focus:outline-none">
+    </div>
+
+    <form class="space-y-4 max-w-md">
+
+        <!-- Text input -->
+        <div>
+            <label class="block text-sm font-medium mb-2">Email</label>
+            <input type="email" class="w-full border border-gray-300 rounded-lg px-4 py-2
+             focus:border-blue-500 focus:ring-2 focus:ring-blue-200 
+             focus:outline-none transition" placeholder="you@example.com">
+        </div>
+
+        <!-- Textarea -->
+        <div>
+            <label class="block text-sm font-medium mb-2">Message</label>
+            <textarea rows="4" class="w-full border border-gray-300 rounded-lg px-4 py-2
+             focus:border-blue-500 focus:ring-2 focus:ring-blue-200 
+             focus:outline-none transition" placeholder="Your message..."></textarea>
+        </div>
+
+        <!-- Submit button -->
+        <button type="submit" class="w-full bg-blue-500 hover:bg-blue-600 
+           focus:ring-4 focus:ring-blue-300 focus:outline-none
+           text-white font-semibold px-6 py-3 rounded-lg transition">
+            Send Message
+        </button>
+
+    </form>
+
+    <!-- Active State Examples -->
+
+    <button class="bg-blue-500 hover:bg-blue-600 active:bg-blue-700 text-white px-6 py-3 rounded">
+        Press me
+    </button>
+
+    <!-- Scale down when pressed -->
+    <button class="bg-green-500 hover:bg-green-600 active:scale-95 transform text-white px-6 py-3 rounded transition">
+        Squish on click
+    </button>
+
+    <!-- Inset shadow (pressed appearance) -->
+    <button
+        class="bg-purple-500 hover:bg-purple-600 active:shadow-inner text-white px-6 py-3 rounded shadow-lg transition">
+        Press effect
+    </button>
+
+
+    <!-- group and group-hover for complex hover interactions -->
+
+    <div class="group bg-white p-6 rounded-lg shadow hover:shadow-xl transition">
+
+        <h3 class="text-xl font-bold text-gray-900 group-hover:text-blue-600 transition">
+            Hover the card
+        </h3>
+
+        <p class="text-gray-600 group-hover:text-gray-900 transition">
+            Text changes color when you hover anywhere on the card
+        </p>
+
+        <button class="mt-4 text-blue-600 group-hover:text-blue-800 transition">
+            Learn More →
+        </button>
+
+    </div>
+
+    <a href="#" class="group block relative overflow-hidden rounded-lg">
+
+        <!-- Image scales on group hover -->
+        <img src="https://picsum.photos/id/237/1920/1080"
+            class="w-full h-64 object-cover transform group-hover:scale-110 transition duration-500">
+
+        <!-- Overlay appears on group hover -->
+        <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-40 transition-opacity">
+        </div>
+
+        <!-- Text content -->
+        <div
+            class="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-2 group-hover:translate-y-0 transition">
+            <h3 class="text-2xl font-bold">Product Name</h3>
+            <p class="opacity-0 group-hover:opacity-100 transition">
+                View details
+            </p>
+        </div>
+    </a>
+
+    <nav class="bg-white shadow">
+        <div class="flex space-x-8 px-6 py-4">
+
+            <!-- Nav item with dropdown -->
+            <div class="group relative">
+                <button class="text-gray-700 group-hover:text-blue-600 transition">
+                    Products
+                    <svg class="inline w-4 h-4 ml-1 transform group-hover:rotate-180 transition">
+                        <!-- Chevron icon -->
+                    </svg>
+                </button>
+
+                <!-- Dropdown (hidden by default, shows on group hover) -->
+                <div
+                    class="absolute left-0 mt-2 w-48 bg-white shadow-lg rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all">
+                    <a href="#" class="block px-4 py-2 hover:bg-gray-100">Product 1</a>
+                    <a href="#" class="block px-4 py-2 hover:bg-gray-100">Product 2</a>
+                    <a href="#" class="block px-4 py-2 hover:bg-gray-100">Product 3</a>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+        <!-- Card 1 -->
+        <div class="group bg-white rounded-lg shadow overflow-hidden cursor-pointer">
+            <div class="relative overflow-hidden">
+                <img src="https://picsum.photos/id/237/1920/1080"
+                    class="w-full h-48 object-cover transform group-hover:scale-105 transition duration-300">
+                <div
+                    class="absolute top-4 right-4 bg-blue-500 text-white px-3 py-1 rounded-full text-sm opacity-0 group-hover:opacity-100 transition">
+                    New
+                </div>
+            </div>
+
+            <div class="p-6">
+                <h3 class="text-xl font-bold mb-2 group-hover:text-blue-600 transition">
+                    Card Title
+                </h3>
+                <p class="text-gray-600 mb-4">
+                    Card description goes here
+                </p>
+                <div class="flex items-center text-blue-600 group-hover:text-blue-800 transition">
+                    <span>Learn More</span>
+                    <svg class="w-4 h-4 ml-2 transform group-hover:translate-x-2 transition">
+                        <!-- Arrow icon -->
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+        <!-- More cards... -->
+    </div>
+
+    <!-- Peer Examples -->
+
+    <!-- Custom checkbox -->
+    <label class="flex items-center cursor-pointer">
+        <input type="checkbox" class="peer sr-only">
+        <div class="w-11 h-6 bg-gray-300 rounded-full peer-checked:bg-blue-500 transition relative">
+            <div class="w-4 h-4 bg-white rounded-full absolute top-1 left-1 peer-checked:translate-x-5 transition">
+            </div>
+        </div>
+        <span class="ml-3 text-gray-700 peer-checked:text-blue-600">
+            Toggle me
+        </span>
+    </label>
+
+    <div class="relative">
+        <input type="text" id="email"
+            class="peer w-full border border-gray-300 rounded-lg px-4 pt-6 pb-2 focus:border-blue-500 focus:outline-none transition"
+            placeholder=" ">
+        <label for="email"
+            class="absolute left-4 top-2 text-xs text-gray-500 peer-placeholder-shown:text-base peer-placeholder-shown:top-4 peer-focus:text-xs peer-focus:top-2 peer-focus:text-blue-500 transition-all">
+            Email Address
+        </label>
+    </div>
+
+    <label class="inline-flex items-center cursor-pointer">
+        <input type="checkbox" class="peer sr-only">
+
+        <!-- Toggle background -->
+        <div class="
+    relative w-14 h-8 
+    bg-gray-300 peer-checked:bg-green-500 
+    rounded-full 
+    transition-colors
+    peer-focus:ring-4 peer-focus:ring-green-200
+  ">
+            <!-- Toggle circle -->
+            <div class="
+      absolute top-1 left-1 
+      w-6 h-6 
+      bg-white 
+      rounded-full 
+      shadow-md
+      transform peer-checked:translate-x-6 
+      transition-transform
+    "></div>
+        </div>
+
+        <span class="ml-3 text-gray-700 peer-checked:text-green-600 peer-checked:font-medium">
+            Enabled
+        </span>
+    </label>
+
+
+    <div class="space-y-3">
+
+        <!-- Option 1 -->
+        <label
+            class="flex items-center p-4 border-2 border-gray-300 rounded-lg cursor-pointer peer-checked:border-blue-500 peer-checked:bg-blue-50">
+            <input type="radio" name="plan" class="peer sr-only">
+            <div class="flex-1">
+                <div class="font-semibold peer-checked:text-blue-600">Basic Plan</div>
+                <div class="text-sm text-gray-500">$9/month</div>
+            </div>
+            <svg class="w-6 h-6 text-blue-500 hidden peer-checked:block">
+                <!-- Checkmark icon -->
+            </svg>
+        </label>
+
+        <!-- Option 2 -->
+        <label
+            class="flex items-center p-4 border-2 border-gray-300 rounded-lg cursor-pointer peer-checked:border-blue-500 peer-checked:bg-blue-50">
+            <input type="radio" name="plan" class="peer sr-only">
+            <div class="flex-1">
+                <div class="font-semibold peer-checked:text-blue-600">Pro Plan</div>
+                <div class="text-sm text-gray-500">$29/month</div>
+            </div>
+            <svg class="w-6 h-6 text-blue-500 hidden peer-checked:block">
+                <!-- Checkmark icon -->
+            </svg>
+        </label>
+
+    </div>
+
+    <!-- Disabled button -->
+    <button disabled
+        class="bg-blue-500 text-white px-6 py-3 rounded disabled:bg-gray-300 disabled:text-gray-500 disabled:cursor-not-allowed">
+        Disabled Button
+    </button>
+
+    <!-- Disabled input -->
+    <input type="text" disabled
+        class="border border-gray-300 px-4 py-2 rounded disabled:bg-gray-100 disabled:text-gray-500 disabled:cursor-not-allowed"
+        value="Can't edit this">
+
+    <!-- Styled checkbox -->
+    <label class="inline-flex items-center">
+        <input type="checkbox"
+            class="w-5 h-5 text-blue-500 border-gray-300 rounded focus:ring-2 focus:ring-blue-500 checked:bg-blue-500">
+        <span class="ml-2">Agree to terms</span>
+    </label>
+
+    <!-- Custom checkbox appearance -->
+    <label class="flex items-center cursor-pointer">
+        <div class="relative">
+            <input type="checkbox" class="peer sr-only">
+            <div
+                class="w-6 h-6 border-2 border-gray-300 rounded peer-checked:bg-blue-500 peer-checked:border-blue-500 transition">
+            </div>
+            <svg class="absolute top-0.5 left-0.5 w-5 h-5 text-white hidden peer-checked:block">
+                <path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2" fill="none" />
+            </svg>
+        </div>
+        <span class="ml-3">Custom styled</span>
+    </label>
+
+    <form class="space-y-4">
+
+        <div>
+            <label class="block mb-2">
+                Email
+                <span class="text-red-500">*</span>
+            </label>
+            <input type="email" required class="w-full border border-gray-300 px-4 py-2 rounded
+             focus:border-blue-500 focus:ring-2 focus:ring-blue-200
+             invalid:border-red-500 invalid:text-red-600
+             focus:invalid:border-red-500 focus:invalid:ring-red-200" placeholder="you@example.com">
+            <p class="mt-1 text-sm text-red-500 hidden peer-invalid:block">
+                Please enter a valid email
+            </p>
+        </div>
+
+        <button type="submit" class="bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded">
+            Submit
+        </button>
+
+    </form>
+
+    <!-- Valid state (green) -->
+    <input type="email" class="border border-gray-300 px-4 py-2 rounded
+         valid:border-green-500 valid:text-green-600
+         invalid:border-red-500 invalid:text-red-600">
+
+    <!-- With icons -->
+    <div class="relative">
+        <input type="email" required class="w-full border border-gray-300 pl-4 pr-10 py-2 rounded
+           valid:border-green-500 invalid:border-red-500">
+        <!-- Validation icon -->
+        <svg class="absolute right-3 top-3 w-5 h-5 text-green-500 hidden valid:block">
+            <!-- Checkmark -->
+        </svg>
+        <svg class="absolute right-3 top-3 w-5 h-5 text-red-500 hidden invalid:block">
+            <!-- X mark -->
+        </svg>
+    </div>
+
+
+
+    <!-- Transitions and Animations -->
+
+    <!-- Default transition (all properties, 150ms) -->
+    <button class="bg-blue-500 hover:bg-blue-700 transition">
+        Smooth color change
+    </button>
+
+    <!-- Specific properties -->
+    <div class="transition-colors">Colors only</div>
+    <div class="transition-opacity">Opacity only</div>
+    <div class="transition-transform">Transforms only</div>
+    <div class="transition-all">All properties</div>
+
+    <!-- Duration -->
+    <div class="transition duration-75">75ms</div>
+    <div class="transition duration-150">150ms (default)</div>
+    <div class="transition duration-300">300ms</div>
+    <div class="transition duration-500">500ms</div>
+    <div class="transition duration-700">700ms</div>
+    <div class="transition duration-1000">1000ms (1s)</div>
+
+    <div class="transition ease-linear">Linear</div>
+    <div class="transition ease-in">Ease in</div>
+    <div class="transition ease-out">Ease out</div>
+    <div class="transition ease-in-out">Ease in-out (default)</div>
+
+    <div class="transition delay-75">75ms delay</div>
+    <div class="transition delay-150">150ms delay</div>
+    <div class="transition delay-300">300ms delay</div>
+    <div class="transition delay-500">500ms delay</div>
+
+    <button class="
+  bg-blue-500 hover:bg-blue-600 
+  transform hover:scale-105 hover:-translate-y-1
+  shadow-md hover:shadow-xl
+  text-white px-6 py-3 rounded-lg
+  transition-all duration-300 ease-in-out
+">
+        Smooth Button
+    </button>
+
+    <!-- Spin
+    <div class="animate-spin">
+        <svg class="w-8 h-8">Loading spinner</svg>
+    </div> -->
+
+    <!-- Ping (expanding circle) -->
+    <div class="relative">
+        <span class="absolute animate-ping inline-flex h-3 w-3 rounded-full bg-blue-400 opacity-75"></span>
+        <span class="relative inline-flex rounded-full h-3 w-3 bg-blue-500"></span>
+    </div>
+
+    <!-- Pulse (fade in/out) -->
+    <div class="animate-pulse bg-gray-200 h-4 w-full rounded"></div>
+
+    <!-- Bounce -->
+    <div class="animate-bounce">
+        ↓
+    </div>
+
+    <div class="animate-pulse space-y-4">
+        <div class="h-4 bg-gray-200 rounded w-3/4"></div>
+        <div class="h-4 bg-gray-200 rounded"></div>
+        <div class="h-4 bg-gray-200 rounded w-5/6"></div>
+    </div>
+
+    <button class="relative">
+        <span class="w-6 h-6">🔔</span>
+
+        <!-- Badge with ping animation -->
+        <span class="absolute -top-1 -right-1">
+            <span class="absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75 animate-ping"></span>
+            <span class="relative inline-flex rounded-full h-3 w-3 bg-red-500"></span>
+        </span>
+    </button>
+
+
+    
+</body>
+
+</html>

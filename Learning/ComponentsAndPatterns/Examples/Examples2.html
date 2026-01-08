@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <div class="p-4 space-y-4">
+
+        <!----------------------------------------- Basic Card --------------------------------------------------->
+        <h1 class="text-2xl font-bold">Basic Card</h1>
+        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+            <!-- Image -->
+            <img src="https://picsum.photos/1450/400" class="w-full h-48 object-cover">
+
+            <!-- Content -->
+            <div class="p-6">
+                <h3 class="text-xl font-bold text-gray-900 mb-2">
+                    Card Title
+                </h3>
+                <p class="text-gray-600 mb-4">
+                    This is a description of the card content. It provides context and information.
+                </p>
+                <button class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded transition">
+                    Learn More
+                </button>
+            </div>
+        </div>
+
+        <!------------------------------------------ Horizontal Card --------------------------------------------->
+        <h1 class="text-2xl font-bold pt-20">1. Horizontal Card:</h1>
+        <div class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col md:flex-row">
+            <!-- Image -->
+            <img src="https://picsum.photos/400/300" class="w-full md:w-64 h-48 md:h-auto object-cover">
+
+            <!-- Content -->
+            <div class="p-6 flex-1">
+                <h3 class="text-xl font-bold mb-2">Horizontal Card</h3>
+                <p class="text-gray-600 mb-4">Content side by side with image on larger screens.</p>
+                <button class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded transition">
+                    Action
+                </button>
+            </div>
+        </div>
+
+
+        <!------------------------------------------ Card with Header & Footer --------------------------------------------->
+        <h1 class="text-2xl font-bold pt-20">2. Card with Header & Footer:</h1>
+        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+            <!-- Header -->
+            <div class="bg-gray-50 border-b border-gray-200 px-6 py-4">
+                <h3 class="text-lg font-semibold text-gray-900">Card Header</h3>
+            </div>
+
+            <!-- Body -->
+            <div class="p-6">
+                <p class="text-gray-600">
+                    Main content goes here. This is the body of the card.
+                </p>
+            </div>
+
+            <!-- Footer -->
+            <div class="bg-gray-50 border-t border-gray-200 px-6 py-4 flex justify-between items-center">
+                <span class="text-sm text-gray-500">Last updated: 2 hours ago</span>
+                <button class="text-blue-600 hover:text-blue-800 text-sm font-medium">
+                    View Details →
+                </button>
+            </div>
+        </div>
+
+
+        <!------------------------------------------ Hoverable Card --------------------------------------------->
+        <h1 class="text-2xl font-bold pt-20">3. Hoverable Card:</h1>
+        <div
+            class="bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden cursor-pointer group">
+            <!-- Image with zoom effect -->
+            <div class="overflow-hidden">
+                <img src="https://picsum.photos/1450/400"
+                    class="w-full h-48 object-cover transform group-hover:scale-110 transition-transform duration-500">
+            </div>
+
+            <!-- Content -->
+            <div class="p-6">
+                <h3 class="text-xl font-bold text-gray-900 group-hover:text-blue-600 transition-colors mb-2">
+                    Interactive Card
+                </h3>
+                <p class="text-gray-600 mb-4">
+                    Entire card is clickable with hover effects.
+                </p>
+                <div class="flex items-center text-blue-600 group-hover:text-blue-800 transition-colors">
+                    <span class="text-sm font-medium">Read More</span>
+                    <svg class="w-4 h-4 ml-2 transform group-hover:translate-x-2 transition-transform" fill="none"
+                        stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!------------------------------------------ Stat Card --------------------------------------------->
+        <h1 class="text-2xl font-bold pt-20">4. Stat Card:</h1>
+        <div class="bg-white rounded-lg shadow-md p-6">
+            <div class="flex items-center justify-between mb-4">
+                <h3 class="text-sm font-medium text-gray-500">Total Revenue</h3>
+                <svg class="w-8 h-8 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
+                    </path>
+                </svg>
+            </div>
+            <div class="text-3xl font-bold text-gray-900 mb-2">$45,678</div>
+            <div class="flex items-center text-sm">
+                <span class="text-green-600 font-medium flex items-center">
+                    <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd"
+                            d="M5.293 9.707a1 1 0 010-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 01-1.414 1.414L11 7.414V15a1 1 0 11-2 0V7.414L6.707 9.707a1 1 0 01-1.414 0z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                    12.5%
+                </span>
+                <span class="text-gray-500 ml-2">from last month</span>
+            </div>
+        </div>
+
+
+        <!------------------------------------------ Profile Card --------------------------------------------->
+        <h1 class="text-2xl font-bold pt-20">5. Profile Card:</h1>
+        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+            <!-- Cover image -->
+            <div class="h-32 bg-gradient-to-r from-blue-400 to-purple-500"></div>
+
+            <!-- Profile content -->
+            <div class="px-6 pb-6">
+                <!-- Avatar (overlapping cover) -->
+                <div class="flex justify-center -mt-16 mb-4">
+                    <img src="https://picsum.photos/200/200"
+                        class="w-32 h-32 rounded-full border-4 border-white shadow-lg">
+                </div>
+
+                <!-- Info -->
+                <div class="text-center">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-1">John Doe</h3>
+                    <p class="text-gray-600 mb-4">Product Designer</p>
+
+                    <!-- Stats -->
+                    <div class="flex justify-center space-x-8 mb-6">
+                        <div>
+                            <div class="text-xl font-bold text-gray-900">1.2K</div>
+                            <div class="text-sm text-gray-500">Followers</div>
+                        </div>
+                        <div>
+                            <div class="text-xl font-bold text-gray-900">345</div>
+                            <div class="text-sm text-gray-500">Following</div>
+                        </div>
+                        <div>
+                            <div class="text-xl font-bold text-gray-900">89</div>
+                            <div class="text-sm text-gray-500">Posts</div>
+                        </div>
+                    </div>
+
+                    <!-- Action button -->
+                    <button
+                        class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 rounded-lg transition">
+                        Follow
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h1 class="text-4xl my-8 mx-4">Navigations Bars</h1>
+    <div class="space-y-4 p-4">
+        <!------------------------------------------ Simple Navbar --------------------------------------------->
+        <h1 class="text-2xl font-bold pt-20">1. Simple Navbar:</h1>
+        <nav class="bg-white shadow">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex justify-between items-center h-16">
+                    <!-- Logo -->
+                    <div class="flex-shrink-0">
+                        <h1 class="text-2xl font-bold text-blue-600">Logo</h1>
+                    </div>
+
+                    <!-- Navigation links -->
+                    <div class="hidden md:flex space-x-8">
+                        <a href="#" class="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition">
+                            Home
+                        </a>
+                        <a href="#" class="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition">
+                            About
+                        </a>
+                        <a href="#" class="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition">
+                            Services
+                        </a>
+                        <a href="#" class="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition">
+                            Contact
+                        </a>
+                    </div>
+
+                    <!-- CTA Button -->
+                    <div class="hidden md:block">
+                        <button
+                            class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition">
+                            Get Started
+                        </button>
+                    </div>
+
+                    <!-- Mobile menu button -->
+                    <div class="md:hidden">
+                        <button class="text-gray-700 hover:text-blue-600 p-2">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h16M4 18h16"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mobile menu (hidden by default) -->
+            <div class="md:hidden hidden" id="mobile-menu">
+                <div class="px-2 pt-2 pb-3 space-y-1">
+                    <a href="#" class="block px-3 py-2 text-gray-700 hover:bg-gray-100 rounded-md">Home</a>
+                    <a href="#" class="block px-3 py-2 text-gray-700 hover:bg-gray-100 rounded-md">About</a>
+                    <a href="#" class="block px-3 py-2 text-gray-700 hover:bg-gray-100 rounded-md">Services</a>
+                    <a href="#" class="block px-3 py-2 text-gray-700 hover:bg-gray-100 rounded-md">Contact</a>
+                </div>
+            </div>
+        </nav>
+
+        <!------------------------------------------ Navigation with Dropdown --------------------------------------------->
+        <h1 class="text-2xl font-bold pt-20">Navigation with Dropdown</h1>
+        <nav class="bg-white shadow">
+            <div class="max-w-7xl mx-auto px-4">
+                <div class="flex justify-between items-center h-16">
+                    <div class="flex-shrink-0">
+                        <h1 class="text-2xl font-bold text-blue-600">Logo</h1>
+                    </div>
+
+                    <div class="hidden md:flex space-x-8">
+                        <a href="#" class="text-gray-700 hover:text-blue-600 px-3 py-2 font-medium">Home</a>
+
+                        <!-- Dropdown menu -->
+                        <div class="relative group">
+                            <button
+                                class="text-gray-700 group-hover:text-blue-600 px-3 py-2 font-medium flex items-center">
+                                Products
+                                <svg class="w-4 h-4 ml-1 transform group-hover:rotate-180 transition-transform"
+                                    fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </button>
+
+                            <!-- Dropdown content -->
+                            <div
+                                class="absolute left-0 mt-2 w-48 bg-white rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-10">
+                                <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-t-lg">Product
+                                    1</a>
+                                <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Product 2</a>
+                                <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-b-lg">Product
+                                    3</a>
+                            </div>
+                        </div>
+
+                        <a href="#" class="text-gray-700 hover:text-blue-600 px-3 py-2 font-medium">About</a>
+                        <a href="#" class="text-gray-700 hover:text-blue-600 px-3 py-2 font-medium">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!------------------------------------------ Sidebar Navigation --------------------------------------------->
+        <h1 class="text-2xl font-bold pt-20">Sidebar Navigation:</h1>
+        <div class="flex h-screen">
+            <!-- Sidebar -->
+            <aside class="w-64 bg-gray-800 text-white">
+                <!-- Logo -->
+                <div class="p-6 border-b border-gray-700">
+                    <h1 class="text-2xl font-bold">Dashboard</h1>
+                </div>
+
+                <!-- Navigation -->
+                <nav class="p-4 space-y-2">
+                    <!-- Active item -->
+                    <a href="#" class="flex items-center space-x-3 px-4 py-3 bg-blue-600 rounded-lg">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6">
+                            </path>
+                        </svg>
+                        <span>Dashboard</span>
+                    </a>
+
+                    <!-- Regular items -->
+                    <a href="#" class="flex items-center space-x-3 px-4 py-3 hover:bg-gray-700 rounded-lg transition">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z">
+                            </path>
+                        </svg>
+                        <span>Analytics</span>
+                    </a>
+
+                    <a href="#" class="flex items-center space-x-3 px-4 py-3 hover:bg-gray-700 rounded-lg transition">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z">
+                            </path>
+                        </svg>
+                        <span>Users</span>
+                    </a>
+
+                    <a href="#" class="flex items-center space-x-3 px-4 py-3 hover:bg-gray-700 rounded-lg transition">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z">
+                            </path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                        </svg>
+                        <span>Settings</span>
+                    </a>
+                </nav>
+            </aside>
+
+            <!-- Main content -->
+            <main class="flex-1 bg-gray-100 p-8">
+                <h2 class="text-3xl font-bold mb-4">Main Content</h2>
+                <p class="text-gray-600">Content goes here...</p>
+            </main>
+        </div>
+    </div>
+
+    <h1 class="text-4xl my-8 mx-4">Forms and Inputs</h1>
+    <div class="p-4 space-y-4">
+        <!------------------------------------------ Simple Form --------------------------------------------->
+        <h1 class="text-2xl font-bold pt-20">Complete Form Example</h1>
+        <form class="max-w-lg mx-auto bg-white shadow-lg rounded-lg p-8 space-y-6">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">Contact Us</h2>
+
+            <!-- Text input -->
+            <div>
+                <label for="name" class="block text-sm font-medium text-gray-700 mb-2">
+                    Full Name *
+                </label>
+                <input type="text" id="name" required
+                    class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition"
+                    placeholder="John Doe">
+            </div>
+
+            <!-- Email input -->
+            <div>
+                <label for="email" class="block text-sm font-medium text-gray-700 mb-2">
+                    Email Address *
+                </label>
+                <input type="email" id="email" required
+                    class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition"
+                    placeholder="you@example.com">
+            </div>
+
+            <!-- Select dropdown -->
+            <div>
+                <label for="subject" class="block text-sm font-medium text-gray-700 mb-2">
+                    Subject
+                </label>
+                <select id="subject"
+                    class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition bg-white">
+                    <option>General Inquiry</option>
+                    <option>Support</option>
+                    <option>Sales</option>
+                    <option>Partnership</option>
+                </select>
+            </div>
+
+            <!-- Textarea -->
+            <div>
+                <label for="message" class="block text-sm font-medium text-gray-700 mb-2">
+                    Message *
+                </label>
+                <textarea id="message" rows="4" required
+                    class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition resize-none"
+                    placeholder="Tell us more..."></textarea>
+            </div>
+
+            <!-- Checkbox -->
+            <div class="flex items-start">
+                <input type="checkbox" id="terms"
+                    class="mt-1 w-4 h-4 text-blue-600 border-gray-300 rounded focus:ring-2 focus:ring-blue-500">
+                <label for="terms" class="ml-2 text-sm text-gray-700">
+                    I agree to the <a href="#" class="text-blue-600 hover:underline">Terms and Conditions</a>
+                </label>
+            </div>
+
+            <!-- Submit button -->
+            <button type="submit"
+                class="w-full bg-blue-600 hover:bg-blue-700 active:bg-blue-800 text-white font-semibold py-3 rounded-lg shadow-md hover:shadow-lg transition-all duration-150 focus:outline-none focus:ring-4 focus:ring-blue-300">
+                Send Message
+            </button>
+        </form>
+
+        <!------------------------------------------ Input Variations --------------------------------------------->
+        <h1 class="text-2xl font-bold pt-20">Input Variations</h1>
+        <!-- Input with icon (left) -->
+        <div class="relative">
+            <svg class="absolute left-3 top-3 w-5 h-5 text-gray-400" fill="none" stroke="currentColor"
+                viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+            </svg>
+            <input type="text"
+                class="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                placeholder="Search...">
+        </div>
+
+        <!-- Input with icon (right) -->
+        <div class="relative">
+            <input type="password"
+                class="w-full px-4 py-2 pr-10 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                placeholder="Password">
+            <button class="absolute right-3 top-3 text-gray-400 hover:text-gray-600">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z">
+                    </path>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Input with error -->
+        <div>
+            <input type="email"
+                class="w-full px-4 py-2 border-2 border-red-500 rounded-lg focus:ring-2 focus:ring-red-300 focus:border-red-500"
+                placeholder="Email" value="invalid-email">
+            <p class="mt-1 text-sm text-red-600">Please enter a valid email address</p>
+        </div>
+
+        <!-- Input with success -->
+        <div>
+            <input type="email"
+                class="w-full px-4 py-2 border-2 border-green-500 rounded-lg focus:ring-2 focus:ring-green-300 focus:border-green-500"
+                value="user@example.com">
+            <p class="mt-1 text-sm text-green-600 flex items-center">
+                <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd"
+                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                        clip-rule="evenodd"></path>
+                </svg>
+                Email is valid
+            </p>
+        </div>
+
+        <!-- Floating label input -->
+        <div class="relative">
+            <input type="text" id="floating"
+                class="peer w-full px-4 pt-6 pb-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent placeholder-transparent"
+                placeholder="Name">
+            <label for="floating"
+                class="absolute left-4 top-2 text-xs text-gray-500 transition-all peer-placeholder-shown:text-base peer-placeholder-shown:top-4 peer-focus:text-xs peer-focus:top-2 peer-focus:text-blue-500">
+                Full Name
+            </label>
+        </div>
+    </div>
+
+    <h1 class="text-4xl my-8 mx-4">Modals and Overlays</h1>
+
+    <!-- ---------------------------------------- Basic Modal -------------------------------------------
+    <h1 class="text-2xl font-bold pt-20">Basic Modal</h1>
+    <!-- Modal backdrop
+    <div class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50">
+
+        <!-- Modal content 
+        <div class="bg-white rounded-xl shadow-2xl max-w-md w-full p-6 relative animate-fade-in">
+
+            <!-- Close button 
+            <button class="absolute top-4 right-4 text-gray-400 hover:text-gray-600 transition">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12">
+                    </path>
+                </svg>
+            </button>
+
+            <!-- Modal header 
+            <div class="mb-4">
+                <h3 class="text-2xl font-bold text-gray-900">Modal Title</h3>
+                <p class="text-gray-600 mt-2">This is a modal dialog with some content.</p>
+            </div>
+
+            <!-- Modal body
+            <div class="mb-6">
+                <p class="text-gray-700">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua.
+                </p>
+            </div>
+
+            <!-- Modal footer
+            <div class="flex space-x-4">
+                <button class="flex-1 px-4 py-2 border border-gray-300 rounded-lg hover:bg-gray-50 transition">
+                    Cancel
+                </button>
+                <button class="flex-1 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg transition">
+                    Confirm
+                </button>
+            </div>
+
+        </div>
+    </div> -->
+
+    <!-- ---------------------------------------- Confirmation Modal -----------------------------------------
+    <h1 class="text-2xl font-bold pt-20">Confirmation Modal</h1>
+    <div class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50">
+        <div class="bg-white rounded-xl shadow-2xl max-w-sm w-full p-6">
+
+            <!-- Icon
+            <div class="flex justify-center mb-4">
+                <div class="w-12 h-12 rounded-full bg-red-100 flex items-center justify-center">
+                    <svg class="w-6 h-6 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z">
+                        </path>
+                    </svg>
+                </div>
+            </div>
+
+            <!-- Content
+            <h3 class="text-xl font-bold text-gray-900 text-center mb-2">
+                Delete Account?
+            </h3>
+            <p class="text-gray-600 text-center mb-6">
+                This action cannot be undone. All your data will be permanently deleted.
+            </p>
+
+            <!-- Actions 
+            <div class="flex flex-col space-y-3">
+                <button
+                    class="w-full px-4 py-2 bg-red-600 hover:bg-red-700 text-white font-semibold rounded-lg transition">
+                    Yes, Delete
+                </button>
+                <button class="w-full px-4 py-2 border border-gray-300 hover:bg-gray-50 rounded-lg transition">
+                    Cancel
+                </button>
+            </div>
+
+        </div>
+    </div> -->
+
+    <!-- ---------------------------------------- Slide-over Panel ---------------------------------------
+    <h1 class="text-2xl font-bold pt-20">Slide-over Panel</h1>
+    <div class="fixed inset-0 z-50">
+        <!-- Backdrop 
+        <div class="fixed inset-0 bg-black bg-opacity-50"></div>
+
+        <!-- Panel 
+        <div class="fixed inset-y-0 right-0 max-w-md w-full bg-white shadow-2xl overflow-y-auto">
+
+            <!-- Header
+            <div
+                class="sticky top-0 bg-white border-b border-gray-200 px-6 py-4 flex items-center justify-between z-10">
+                <h2 class="text-xl font-bold text-gray-900">Panel Title</h2>
+                <button class="text-gray-400 hover:text-gray-600 transition">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12">
+                        </path>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Content 
+            <div class="p-6">
+                <p class="text-gray-600 mb-4">Panel content goes here...</p>
+                <!-- More content -->
+    </div>
+
+    <!-- Footer 
+            <div class="sticky bottom-0 bg-white border-t border-gray-200 px-6 py-4">
+                <button class="w-full bg-blue-600 hover:bg-blue-700 text-white py-2 rounded-lg transition">
+                    Save Changes
+                </button>
+            </div>
+
+        </div>
+    </div> -->
+
+    <h1 class="text-4xl my-8 mx-4">Common UI Patterns</h1>
+
+
+
+
+
+    <!------------------------------------------ Alert/Toast Notifications --------------------------------------------->
+    <!-- Success toast -->
+    <div
+        class="fixed top-4 right-4 bg-green-50 border-l-4 border-green-500 rounded-lg shadow-lg p-4 max-w-sm animate-slide-down">
+        <div class="flex items-start">
+            <svg class="w-6 h-6 text-green-500 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                    clip-rule="evenodd"></path>
+            </svg>
+            <div class="ml-3 flex-1">
+                <p class="text-sm font-medium text-green-900">Success!</p>
+                <p class="text-sm text-green-700 mt-1">Your changes have been saved.</p>
+            </div>
+            <button class="ml-4 text-green-500 hover:text-green-700">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd"
+                        d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                        clip-rule="evenodd"></path>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <!-- Error toast -->
+    <div class="fixed bottom-4 right-4 bg-red-50 border-l-4 border-red-500 rounded-lg shadow-lg p-4 max-w-sm">
+        <div class="flex items-start">
+            <svg class="w-6 h-6 text-red-500 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z"
+                    clip-rule="evenodd"></path>
+            </svg>
+            <div class="ml-3 flex-1">
+                <p class="text-sm font-medium text-red-900">Error!</p>
+                <p class="text-sm text-red-700 mt-1">Something went wrong.</p>
+            </div>
+            <button class="ml-4 text-red-500 hover:text-red-700">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd"
+                        d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                        clip-rule="evenodd"></path>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+
+    <!------------------------------------------ Pagination Controls --------------------------------------------->
+    <h1 class="text-2xl font-bold pt-20 px-4">Pagination Controls</h1>
+    <div class="flex items-center justify-center space-x-2">
+        <!-- Previous button -->
+        <button
+            class="px-3 py-2 border border-gray-300 rounded-lg hover:bg-gray-50 disabled:opacity-50 disabled:cursor-not-allowed transition">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+            </svg>
+        </button>
+
+        <!-- Page numbers -->
+        <button class="px-4 py-2 bg-blue-600 text-white rounded-lg">1</button>
+        <button class="px-4 py-2 border border-gray-300 rounded-lg hover:bg-gray-50 transition">2</button>
+        <button class="px-4 py-2 border border-gray-300 rounded-lg hover:bg-gray-50 transition">3</button>
+        <span class="px-2">...</span>
+        <button class="px-4 py-2 border border-gray-300 rounded-lg hover:bg-gray-50 transition">10</button>
+
+        <!-- Next button -->
+        <button class="px-3 py-2 border border-gray-300 rounded-lg hover:bg-gray-50 transition">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+            </svg>
+        </button>
+    </div>
+
+    <!------------------------------------------ Loading Skeleton --------------------------------------------->
+    <h1 class="text-2xl font-bold py-10 px-4">Loading Skeleton</h1>
+    <div class="animate-pulse space-y-4 px-4">
+        <!-- Header skeleton -->
+        <div class="h-4 bg-gray-200 rounded w-3/4"></div>
+
+        <!-- Content skeletons -->
+        <div class="space-y-3">
+            <div class="h-4 bg-gray-200 rounded"></div>
+            <div class="h-4 bg-gray-200 rounded w-5/6"></div>
+            <div class="h-4 bg-gray-200 rounded w-4/6"></div>
+        </div>
+
+        <!-- Image skeleton -->
+        <div class="h-64 bg-gray-200 rounded"></div>
+
+        <!-- Button skeleton -->
+        <div class="h-10 bg-gray-200 rounded w-32"></div>
+    </div>
+
+    <!------------------------------------------- Badger Tag --------------------------------------------->
+    <h1 class="text-2xl font-bold py-10 px-4">Badge Tags</h1>
+    <div class="p-4">
+
+        <!-- Basic badges -->
+        <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-blue-100 text-blue-800">
+            New
+        </span>
+
+        <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-green-100 text-green-800">
+            Active
+        </span>
+
+        <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-red-100 text-red-800">
+            Urgent
+        </span>
+
+        <!-- Badge with icon -->
+        <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-purple-100 text-purple-800">
+            <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                    clip-rule="evenodd"></path>
+            </svg>
+            Verified
+        </span>
+
+        <!-- Badge with remove button -->
+        <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-200 text-gray-800">
+            React
+            <button class="ml-2 hover:text-gray-600">
+                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd"
+                        d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                        clip-rule="evenodd"></path>
+                </svg>
+            </button>
+        </span>
+    </div>
+
+</body>
+
+</html>

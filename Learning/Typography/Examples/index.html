@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <article class="max-w-2xl mx-auto p-8">
+        <!-- Article title in serif for elegance -->
+        <h1 class="font-serif text-4xl font-bold mb-4">
+            The Art of Typography
+        </h1>
+
+        <!-- Body text in sans-serif for readability -->
+        <p class="font-sans text-gray-700 mb-4">
+            Typography is the art and technique of arranging type.
+        </p>
+
+        <!-- Code example in monospace -->
+        <pre class="font-mono bg-gray-100 p-4 rounded">
+    const greeting = "Hello World";
+  </pre>
+    </article>
+
+    <p class="text-xs">Extra small (0.75rem / 12px)</p>
+    <p class="text-sm">Small (0.875rem / 14px)</p>
+    <p class="text-base">Base (1rem / 16px) - DEFAULT</p>
+    <p class="text-lg">Large (1.125rem / 18px)</p>
+    <p class="text-xl">Extra large (1.25rem / 20px)</p>
+    <p class="text-2xl">2XL (1.5rem / 24px)</p>
+    <p class="text-3xl">3XL (1.875rem / 30px)</p>
+    <p class="text-4xl">4XL (2.25rem / 36px)</p>
+    <p class="text-5xl">5XL (3rem / 48px)</p>
+    <p class="text-6xl">6XL (3.75rem / 60px)</p>
+    <p class="text-7xl">7XL (4.5rem / 72px)</p>
+    <p class="text-8xl">8XL (6rem / 96px)</p>
+    <p class="text-9xl">9XL (8rem / 128px)</p>
+
+    <p class="font-thin">Thin (100)</p>
+    <p class="font-extralight">Extra Light (200)</p>
+    <p class="font-light">Light (300)</p>
+    <p class="font-normal">Normal (400) - DEFAULT</p>
+    <p class="font-medium">Medium (500)</p>
+    <p class="font-semibold">Semibold (600)</p>
+    <p class="font-bold">Bold (700)</p>
+    <p class="font-extrabold">Extra Bold (800)</p>
+    <p class="font-black">Black (900)</p>
+
+    <p class="leading-none">Line height: 1 (tight)</p>
+    <p class="leading-tight">Line height: 1.25</p>
+    <p class="leading-snug">Line height: 1.375</p>
+    <p class="leading-normal">Line height: 1.5 (DEFAULT)</p>
+    <p class="leading-relaxed">Line height: 1.625</p>
+    <p class="leading-loose">Line height: 2</p>
+
+    <p class="tracking-tighter">Tighter (-0.05em)</p>
+    <p class="tracking-tight">Tight (-0.025em)</p>
+    <p class="tracking-normal">Normal (0em) - DEFAULT</p>
+    <p class="tracking-wide">Wide (0.025em)</p>
+    <p class="tracking-wider">Wider (0.05em)</p>
+    <p class="tracking-widest">Widest (0.1em)</p>
+
+    <!-- Truncate with ellipsis -->
+    <p class="truncate">
+        This is a very long line of text that will be cut off with an ellipsis...
+    </p>
+
+    <!-- Text ellipsis (requires specific setup) -->
+    <p class="overflow-hidden text-ellipsis">
+        Long text...
+    </p>
+
+    <!-- Clip (no ellipsis) -->
+    <p class="text-clip">
+        Long text gets clipped
+    </p>
+
+    <!-- Card with truncated title -->
+    <div class="w-64 bg-white p-4 shadow rounded">
+        <h3 class="font-bold truncate">
+            This is a very long article title that would normally wrap
+        </h3>
+        <p class="text-sm text-gray-600">
+            Preview text...
+        </p>
+    </div>
+</body>
+
+</html>

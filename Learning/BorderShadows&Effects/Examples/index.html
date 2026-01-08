@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="p-4">
+    <div class="space-y-3">
+        <!-- All sides -->
+        <div class="border">1px border (default)</div>
+        <div class="border-0">No border</div>
+        <div class="border-2">2px border</div>
+        <div class="border-4">4px border</div>
+        <div class="border-8">8px border</div>
+
+        <!-- Individual sides -->
+        <div class="border-t">Top border only</div>
+        <div class="border-r">Right border only</div>
+        <div class="border-b">Bottom border only</div>
+        <div class="border-l">Left border only</div>
+
+        <!-- Specific widths on specific sides -->
+        <div class="border-t-2">2px top border</div>
+        <div class="border-b-4">4px bottom border</div>
+
+        <!-- Horizontal and vertical -->
+        <div class="border-x">Left and right borders</div>
+        <div class="border-y">Top and bottom borders</div>
+        <div class="border-x-2">2px left and right</div>
+
+        <div class="border-2 border-solid border-black">Solid border (default)</div>
+        <div class="border-2 border-dashed border-black">Dashed border</div>
+        <div class="border-2 border-dotted border-black">Dotted border</div>
+        <div class="border-2 border-double border-black">Double border</div>
+        <div class="border-2 border-none">No border</div>
+
+        <!-- Solid divider -->
+        <div class="border-b border-gray-200"></div>
+
+        <!-- Dashed divider -->
+        <div class="border-b border-dashed border-gray-300"></div>
+
+        <!-- Dotted divider -->
+        <div class="border-b border-dotted border-gray-400"></div>
+
+        <!-- Uniform radius -->
+        <div class="border-2 border-black rounded-none p-2">No rounding (square)</div>
+        <div class="border-2 border-black rounded-sm p-2">Small radius (2px)</div>
+        <div class="border-2 border-black rounded p-2">Default radius (4px)</div>
+        <div class="border-2 border-black rounded-md p-2">Medium radius (6px)</div>
+        <div class="border-2 border-black rounded-lg p-2">Large radius (8px)</div>
+        <div class="border-2 border-black rounded-xl p-2">Extra large (12px)</div>
+        <div class="border-2 border-black rounded-2xl p-2">2XL radius (16px)</div>
+        <div class="border-2 border-black rounded-3xl p-2">3XL radius (24px)</div>
+        <div class="border-2 border-black rounded-full p-2">Full circle/pill shape</div>
+
+        <!-- Individual corners -->
+        <div class="border-2 border-black rounded-t-lg p-2">Top corners rounded</div>
+        <div class="border-2 border-black rounded-r-lg p-2">Right corners rounded</div>
+        <div class="border-2 border-black rounded-b-lg p-2">Bottom corners rounded</div>
+        <div class="border-2 border-black rounded-l-lg p-2">Left corners rounded</div>
+
+        <!-- Specific corners -->
+        <div class="border-2 border-black rounded-tl-lg p-2">Top-left only</div>
+        <div class="border-2 border-black rounded-tr-lg p-2">Top-right only</div>
+        <div class="border-2 border-black rounded-br-lg p-2">Bottom-right only</div>
+        <div class="border-2 border-black rounded-bl-lg p-2">Bottom-left only</div>
+
+        <div class="border border-gray-200 rounded-lg p-6 bg-white shadow-sm">
+            <h3 class="text-xl font-bold mb-2">Card Title</h3>
+            <p class="text-gray-600">Card with subtle border and rounded corners</p>
+        </div>
+
+        <div class="border-l-4 border-blue-500 bg-blue-50 p-4 rounded">
+            <h4 class="font-bold text-blue-900">Info</h4>
+            <p class="text-blue-800">Important information with left accent</p>
+        </div>
+
+        <!-- Rounded button -->
+        <button class="bg-blue-500 text-white px-6 py-2 rounded-lg">
+            Standard
+        </button>
+
+        <!-- Pill button -->
+        <button class="bg-green-500 text-white px-6 py-2 rounded-full">
+            Pill Shape
+        </button>
+
+        <!-- Square button -->
+        <button class="bg-red-500 text-white px-6 py-2 rounded-none">
+            Square
+        </button>
+
+        <input type="text"
+            class="w-full px-4 py-2 border-2 border-gray-300 rounded-lg focus:border-blue-500 focus:outline-none"
+            placeholder="Enter text">
+
+        <div class="border-b border-gray-200">
+            <nav class="flex space-x-8">
+                <a href="#" class="py-4 px-1 border-b-2 border-blue-500 text-blue-600 font-medium">
+                    Active Tab
+                </a>
+                <a href="#"
+                    class="py-4 px-1 border-b-2 border-transparent hover:border-gray-300 text-gray-500 hover:text-gray-700">
+                    Tab 2
+                </a>
+                <a href="#"
+                    class="py-4 px-1 border-b-2 border-transparent hover:border-gray-300 text-gray-500 hover:text-gray-700">
+                    Tab 3
+                </a>
+            </nav>
+        </div>
+    </div>
+
+    <h1 class="text-4xl my-8">Shadows</h1>
+
+    <div class="space-y-4">
+        <div class="shadow-inner py-4">
+            Inset shadow (pressed appearance)
+        </div>
+
+        <button class="bg-gray-200 shadow-inner px-6 py-3 rounded-lg">
+            Looks pressed
+        </button>
+
+        <!-- Colored shadows -->
+        <div class="shadow-lg shadow-blue-500/50">Blue shadow</div>
+        <div class="shadow-lg shadow-red-500/50">Red shadow</div>
+        <div class="shadow-xl shadow-purple-500/30">Purple shadow (lighter)</div>
+
+        <button class="bg-blue-500 text-white px-6 py-3 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+            Elevated button
+        </button>
+
+        <button
+            class="fixed bottom-8 right-8 w-14 h-14 bg-blue-500 text-white rounded-full shadow-lg hover:shadow-2xl transition-shadow flex items-center justify-center z-10">
+            +
+        </button>
+
+
+    </div>
+    <!-- <div class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+        <div class="bg-white rounded-xl shadow-2xl p-8 max-w-md w-full">
+            <h2 class="text-2xl font-bold mb-4">Modal Title</h2>
+            <p class="text-gray-600 mb-6">Modal content here</p>
+            <button class="bg-blue-500 text-white px-4 py-2 rounded">Close</button>
+        </div>
+    </div> -->
+
+    <h1 class="text-4xl my-8">Opacity</h1>
+
+    <div class="space-y-4">
+        <div class="opacity-0">Invisible (0%)</div>
+        <div class="opacity-5">5% opacity</div>
+        <div class="opacity-10">10% opacity</div>
+        <div class="opacity-20">20% opacity</div>
+        <div class="opacity-25">25% opacity</div>
+        <div class="opacity-30">30% opacity</div>
+        <div class="opacity-40">40% opacity</div>
+        <div class="opacity-50">50% opacity</div>
+        <div class="opacity-60">60% opacity</div>
+        <div class="opacity-70">70% opacity</div>
+        <div class="opacity-75">75% opacity</div>
+        <div class="opacity-80">80% opacity</div>
+        <div class="opacity-90">90% opacity</div>
+        <div class="opacity-95">95% opacity</div>
+        <div class="opacity-100">Fully visible (100%)</div>
+
+        <!-- Loading skeleton -->
+        <div class="space-y-3">
+            <div class="h-4 bg-gray-200 rounded animate-pulse opacity-70"></div>
+            <div class="h-4 bg-gray-200 rounded animate-pulse opacity-70"></div>
+            <div class="h-4 bg-gray-200 rounded animate-pulse opacity-70"></div>
+        </div>
+
+        <!-- Disabled state -->
+        <button class="bg-blue-500 text-white px-4 py-2 rounded disabled:opacity-50 disabled:cursor-not-allowed">
+            Submit
+        </button>
+
+        <!-- These are different! -->
+        <div class="bg-blue-500 opacity-50">
+            Entire element is 50% transparent
+        </div>
+
+        <div class="bg-blue-500/50">
+            Only the background is 50% transparent (text stays opaque)
+        </div>
+
+        <div class="backdrop-blur-none">No blur</div>
+        <div class="backdrop-blur-sm">Small backdrop blur</div>
+        <div class="backdrop-blur">Default backdrop blur</div>
+        <div class="backdrop-blur-md">Medium backdrop blur</div>
+        <div class="backdrop-blur-lg">Large backdrop blur</div>
+        <div class="backdrop-blur-xl">XL backdrop blur</div>
+        <div class="backdrop-blur-2xl">2XL backdrop blur</div>
+        <div class="backdrop-blur-3xl">3XL backdrop blur</div>
+
+        <div class="relative min-h-screen bg-gradient-to-br from-purple-400 via-pink-500 to-red-500 p-8">
+
+            <!-- Background content -->
+            <div class="text-white text-9xl">BLUR</div>
+
+            <!-- Glass card -->
+            <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                <div class="backdrop-blur-md bg-white/30 rounded-xl p-8 shadow-xl border border-white/20">
+                    <h2 class="text-3xl font-bold text-white mb-4">
+                        Glass Effect
+                    </h2>
+                    <p class="text-white/90">
+                        Background is blurred, creating a frosted glass appearance
+                    </p>
+                </div>
+            </div>
+
+            <!-- <div class="fixed inset-0 backdrop-blur-sm bg-black/30 flex items-center justify-center">
+                <div class="bg-white rounded-xl shadow-2xl p-8 max-w-md">
+                    <h2 class="text-2xl font-bold mb-4">Modal</h2>
+                    <p class="text-gray-600">Background is blurred when modal is open</p>
+                </div>
+            </div> -->
+
+        </div>
+
+        <nav class="sticky top-0 backdrop-blur-lg bg-white/70 shadow-sm z-10">
+            <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+                <h1 class="text-xl font-bold">Logo</h1>
+                <div class="flex space-x-6">
+                    <a href="#" class="hover:text-blue-600">Home</a>
+                    <a href="#" class="hover:text-blue-600">About</a>
+                    <a href="#" class="hover:text-blue-600">Contact</a>
+                </div>
+            </div>
+        </nav>
+
+        <p class="blur hover:blur-none transition-all cursor-pointer select-none">
+            This text is blurred until you hover over it. Great for spoilers!
+        </p>
+    </div>
+
+    <h1 class="text-4xl my-8">Ring Utilities</h1>
+
+    <div class="space-y-4">
+        <div class="ring">Default ring (3px)</div>
+        <div class="ring-0">No ring</div>
+        <div class="ring-1">1px ring</div>
+        <div class="ring-2">2px ring</div>
+        <div class="ring-4">4px ring</div>
+        <div class="ring-8">8px ring</div>
+
+        <!-- Inset ring (inside element) -->
+        <div class="ring-inset ring-green-400">Inset ring</div>
+
+        <div class="ring-2 ring-blue-500">Blue ring</div>
+        <div class="ring-2 ring-red-500">Red ring</div>
+        <div class="ring-2 ring-green-500">Green ring</div>
+
+        <!-- With opacity -->
+        <div class="ring-2 ring-blue-500/50">50% opacity blue ring</div>
+
+        <div class="ring-2 ring-blue-500 ring-offset-0">No offset</div>
+        <div class="ring-2 ring-blue-500 ring-offset-2">2px offset</div>
+        <div class="ring-2 ring-blue-500 ring-offset-4">4px offset</div>
+        <div class="ring-2 ring-blue-500 ring-offset-8">8px offset</div>
+
+        <!-- Offset color (for dark backgrounds) -->
+        <div class="bg-gray-800 ring-2 ring-white ring-offset-2 ring-offset-gray-800 text-white">
+            Ring with colored offset
+        </div>
+
+        <!-- Input focus -->
+        <input type="text"
+            class="border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500">
+
+        <!-- Button focus -->
+        <button class="bg-blue-500 text-white px-6 py-3 rounded focus:outline-none focus:ring-4 focus:ring-blue-300">
+            Focusable Button
+        </button>
+
+        <div class="grid grid-cols-3 gap-4">
+            <button class="border-2 border-gray-300 p-4 rounded-lg hover:border-blue-500">
+                Option 1
+            </button>
+
+            <!-- Selected -->
+            <button class="border-2 border-blue-500 p-4 rounded-lg ring-4 ring-blue-200">
+                Option 2 (Selected)
+            </button>
+
+            <button class="border-2 border-gray-300 p-4 rounded-lg hover:border-blue-500">
+                Option 3
+            </button>
+        </div>
+
+        <img src="https://picsum.photos/id/237/400/300"
+            class="w-16 h-16 rounded-full ring-4 ring-blue-500 ring-offset-2">
+
+        <div class="relative inline-block">
+            <img src="https://picsum.photos/id/237/400/300" class="w-12 h-12 rounded-full">
+            <span class="absolute bottom-0 right-0 block h-3 w-3 rounded-full bg-green-500 ring-2 ring-white"></span>
+        </div>
+    </div>
+
+    <h1 class="text-3xl my-8">Divide Utilities</h1>
+
+    <div class="space-y-4">
+        <!-- Vertical dividers (for flex-row) -->
+        <div class="flex divide-x divide-gray-300">
+            <div class="px-4">Item 1</div>
+            <div class="px-4">Item 2</div>
+            <div class="px-4">Item 3</div>
+        </div>
+
+        <!-- Horizontal dividers (for flex-col or stacked) -->
+        <div class="divide-y divide-gray-200">
+            <div class="py-4">Item 1</div>
+            <div class="py-4">Item 2</div>
+            <div class="py-4">Item 3</div>
+        </div>
+
+        <!-- Different widths -->
+        <div class="divide-y-2 divide-gray-300">
+            <div class="py-4">Thicker divider</div>
+            <div class="py-4">Between items</div>
+        </div>
+
+        <!-- Dashed/dotted -->
+        <div class="divide-y divide-dashed divide-gray-300">
+            <div class="py-4">Dashed</div>
+            <div class="py-4">Dividers</div>
+        </div>
+
+        <nav class="flex divide-x divide-gray-400 text-sm">
+            <a href="#" class="px-3 hover:text-blue-600">Home</a>
+            <a href="#" class="px-3 hover:text-blue-600">Products</a>
+            <a href="#" class="px-3 hover:text-blue-600">Laptops</a>
+            <span class="px-3 text-gray-500">MacBook Pro</span>
+        </nav>
+
+        <ul class="divide-y divide-gray-200 border border-gray-200 rounded-lg">
+            <li class="p-4 hover:bg-gray-50">
+                <div class="font-medium">Item 1</div>
+                <p class="text-sm text-gray-600">Description</p>
+            </li>
+            <li class="p-4 hover:bg-gray-50">
+                <div class="font-medium">Item 2</div>
+                <p class="text-sm text-gray-600">Description</p>
+            </li>
+            <li class="p-4 hover:bg-gray-50">
+                <div class="font-medium">Item 3</div>
+                <p class="text-sm text-gray-600">Description</p>
+            </li>
+        </ul>
+
+        <div class="flex divide-x divide-gray-300 bg-white shadow rounded-lg">
+            <div class="flex-1 p-6 text-center">
+                <div class="text-3xl font-bold text-gray-900">12,345</div>
+                <div class="text-sm text-gray-500">Users</div>
+            </div>
+            <div class="flex-1 p-6 text-center">
+                <div class="text-3xl font-bold text-gray-900">$45,678</div>
+                <div class="text-sm text-gray-500">Revenue</div>
+            </div>
+            <div class="flex-1 p-6 text-center">
+                <div class="text-3xl font-bold text-gray-900">789</div>
+                <div class="text-sm text-gray-500">Orders</div>
+            </div>
+        </div>
+
+        <div class="divide-y divide-gray-200">
+            <div class="py-4 flex gap-4">
+                <div class="text-sm text-gray-500">2:30 PM</div>
+                <div class="flex-1">
+                    <div class="font-medium">Meeting started</div>
+                    <p class="text-sm text-gray-600">Team sync</p>
+                </div>
+            </div>
+            <div class="py-4 flex gap-4">
+                <div class="text-sm text-gray-500">3:15 PM</div>
+                <div class="flex-1">
+                    <div class="font-medium">Document uploaded</div>
+                    <p class="text-sm text-gray-600">Q4 Report.pdf</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h1 class="text-3xl my-8">Combining Effects</h1>
+
+    <div class="space-y-4">
+        <div
+            class="bg-white rounded-xl shadow-lg hover:shadow-2xl border border-gray-200 p-6 transition-all duration-300 hover:-translate-y-1">
+            <h3 class="text-xl font-bold mb-2">Interactive Card</h3>
+            <p class="text-gray-600">Combines shadow, border, and transform</p>
+        </div>
+
+        <button
+            class="backdrop-blur-md bg-blue/20 border border-blue/30 rounded-lg px-6 py-3 text-black shadow-xl hover:bg-blue/30 transition-all">
+            Glass Button
+        </button>
+
+        <div class="relative inline-block">
+            <button class="bg-gray-800 text-white p-3 rounded-lg">
+                <div class="w-6 h-6"><!-- Bell icon -->🔔</div>
+            </button>
+
+            <!-- Badge with multiple effects -->
+            <span
+                class="absolute -top-2 -right-2 bg-red-500 text-white text-xs rounded-full h-6 w-6 flex items-center justify-center ring-4 ring-white shadow-lg">
+                3
+            </span>
+        </div>
+
+        <div class="relative">
+            <input type="text" class="w-full px-4 py-3 pl-12 border-2 border-gray-300 rounded-lg 
+           shadow-sm
+           focus:border-blue-500 focus:ring-4 focus:ring-blue-200 focus:outline-none
+           transition-all" placeholder="Search...">
+            <svg class="absolute left-4 top-3.5 w-5 h-5 text-gray-400">
+                <!-- Search icon -->
+            </svg>
+        </div>
+    </div>
+</body>
+
+</html>

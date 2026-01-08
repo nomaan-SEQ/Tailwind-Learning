@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 2</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<!-- 
+ -------------------------- Assignment 2 (Easy): Card Grid ----------------------------
+    Create a responsive grid of cards:
+
+    - 1 column on mobile
+    - 2 columns on tablet (md)
+    - 3 columns on desktop (lg)
+    - Each card has image, title, description, and button
+    - Use consistent gap spacing 
+--->
+<body>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-4">
+        <div class="flex flex-col border p-4 rounded shadow hover:shadow-xl transition-shadow duration-300 hover:border-blue-500/30">
+            <h1 class="text-3xl mb-6">Product 1</h1>
+            <div class="aspect-video mb-6 shadow">
+                <img src="https://picsum.photos/1920/1080/" alt="Image 4" class="h-full w-full object-cover rounded">
+            </div>
+            <p class="text-xs mb-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, autem minus? Vel temporibus distinctio facere! Assumenda amet ipsa incidunt impedit.</p>
+            <button class="py-2 px-4 bg-blue-500 text-white rounded hover:bg-blue-600">Buy Now</button>
+        </div>
+
+        <div class="flex flex-col border p-4 rounded shadow hover:shadow-xl transition-shadow duration-300 hover:border-blue-500/30">
+            <h1 class="text-3xl mb-6">Product 2</h1>
+            <div class="aspect-video mb-6 shadow">
+                <img src="https://picsum.photos/1920/1080/" alt="Image 4" class="h-full w-full object-cover rounded">
+            </div>
+            <p class="text-xs mb-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, autem minus? Vel temporibus distinctio facere! Assumenda amet ipsa incidunt impedit.</p>
+            <button class="py-2 px-4 bg-blue-500 text-white rounded hover:bg-blue-600">Buy Now</button>
+        </div>
+
+        <div class="flex flex-col border p-4 rounded shadow hover:shadow-xl transition-shadow duration-300 hover:border-blue-500/30">
+            <h1 class="text-3xl mb-6">Product 3</h1>
+            <div class="aspect-video mb-6 shadow">
+                <img src="https://picsum.photos/1920/1080/" alt="Image 3" class="h-full w-full object-cover rounded">
+            </div>
+            <p class="text-xs mb-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, autem minus? Vel temporibus distinctio facere! Assumenda amet ipsa incidunt impedit.</p>
+            <button class="py-2 px-4 bg-blue-500 text-white rounded hover:bg-blue-600">Buy Now</button>
+        </div>
+
+        <div class="flex flex-col border p-4 rounded shadow hover:shadow-xl transition-shadow duration-300 hover:border-blue-500/30">
+            <h1 class="text-3xl mb-6">Product 4</h1>
+            <div class="aspect-video mb-6 shadow">
+                <img src="https://picsum.photos/1920/1080/" alt="Image 4" class="h-full w-full object-cover rounded">
+            </div>
+            <p class="text-xs mb-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, autem minus? Vel temporibus distinctio facere! Assumenda amet ipsa incidunt impedit.</p>
+            <button class="py-2 px-4 bg-blue-500 text-white rounded hover:bg-blue-600">Buy Now</button>
+        </div>
+
+        <div class="flex flex-col border p-4 rounded shadow hover:shadow-xl transition-shadow duration-300 hover:border-blue-500/30">
+            <h1 class="text-3xl mb-6">Product 5</h1>
+            <div class="aspect-video mb-6 shadow">
+                <img src="https://picsum.photos/1920/1080/" alt="Image 5" class="h-full w-full object-cover rounded">
+            </div>
+            <p class="text-xs mb-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, autem minus? Vel temporibus distinctio facere! Assumenda amet ipsa incidunt impedit.</p>
+            <button class="py-2 px-4 bg-blue-500 text-white rounded hover:bg-blue-600 mt-auto">Buy Now</button>
+        </div>
+    </div>
+</body>
+
+</html>

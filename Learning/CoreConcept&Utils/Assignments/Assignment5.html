@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="space-y-4 p-4">
+    <!-- Success alert -->
+    <div class="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded">
+        <strong>Success!</strong> Your changes have been saved.
+    </div>
+
+    <!-- Error alert -->
+    <div class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded">
+        <strong>Error!</strong> Something went wrong.
+    </div>
+
+    <!-- Info alert -->
+    <div class="bg-blue-100 border border-blue-400 text-blue-700 px-4 py-3 rounded">
+        <strong>Info:</strong> Please read this carefully.
+    </div>
+
+    <!-- List with dividers -->
+    <ul class="divide-y divide-gray-200">
+        <li class="py-3">Item 1</li>
+        <li class="py-3">Item 2</li>
+        <li class="py-3">Item 3</li>
+    </ul>
+
+    <!-- Primary button -->
+    <button class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded">
+        Primary Action
+    </button>
+
+    <!-- Secondary button -->
+    <button class="bg-gray-200 hover:bg-gray-300 text-gray-800 px-4 py-2 rounded">
+        Secondary Action
+    </button>
+
+    <!-- Danger button -->
+    <button class="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded">
+        Delete
+    </button>
+
+    <!-- You need border-width first! -->
+    <div class="border border-gray-300">Default border</div>
+    <div class="border-2 border-blue-500">Thicker blue border</div>
+    <div class="border-4 border-red-600">Very thick red border</div>
+
+    <!-- Individual sides -->
+    <div class="border-b border-gray-200">Bottom border only</div>
+    <div class="border-t-2 border-blue-400">Top border, 2px</div>
+
+    <button class="bg-blue-500 text-white px-4 py-2 rounded opacity-50 cursor-not-allowed">
+        Disabled Button
+    </button>
+
+    <!-- Very subtle blue tint -->
+    <div class="bg-blue-500/5 p-4">
+        <p>Content with barely visible blue background</p>
+    </div>
+
+    <!-- Left to right -->
+    <div class="bg-gradient-to-r from-blue-500 to-purple-500 p-8">
+        Blue to purple gradient
+    </div>
+
+    <!-- Top to bottom -->
+    <div class="bg-gradient-to-b from-gray-50 to-gray-200 p-8">
+        Subtle gray gradient
+    </div>
+
+    <!-- Diagonal -->
+    <div class="bg-gradient-to-br from-pink-500 to-orange-500 p-8">
+        Bottom-right diagonal gradient
+    </div>
+
+    <!-- Three colors with via -->
+    <div class="bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 p-8">
+        Three-color gradient
+    </div>
+
+    <div
+        class="bg-gradient-to-br from-blue-600 via-blue-700 to-purple-800 min-h-screen flex items-center justify-center">
+        <div class="text-center text-white">
+            <h1 class="text-5xl font-bold mb-4">Welcome</h1>
+            <p class="text-xl">Beautiful gradient background</p>
+        </div>
+    </div>
+</body>
+
+</html>

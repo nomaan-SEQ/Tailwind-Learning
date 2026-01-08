@@ -1,0 +1,14 @@
+# .gitignore — ignore Visual Studio Code workspace and related files
+# Visual Studio Code
+.vscode/
+*.code-workspace
+.vscode-server/
+.vscode-remote/
+.vscode-test/
+
+# Local history extension
+.history/
+
+# Windows system files
+Thumbs.db
+desktop.ini
